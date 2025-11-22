@@ -206,7 +206,6 @@ def run():
     port = 7860
     host = (
         runtime.get_arg("host") or dotenv.get_dotenv_value("WEB_UI_HOST") or "0.0.0.0")
-    )
     server = None
 
     def register_api_handler(app, handler: type[ApiHandler]):
